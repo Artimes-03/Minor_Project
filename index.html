@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Add the meta tag for responsiveness -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUTORFY</title>
+  <!-- Fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Your custom stylesheet -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navcontainer">
+      <h3 class="nav-items logo">TUTORFY</h3>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" id="btn"></i>
+      </label>
+      <ul class="navbar-nav backdrop-blur-lg">
+        <li class="nav-items">
+          <a class="nav-link_active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="about_us.html">About Us</a>
+        </li>
+        <li class="log_in nav-items">
+          <a href="#"><button class="mySelect">Log in
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                <path fill-rule="evenodd"
+                  d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+              </svg>
+            </button>
+          </a>
+        </li>
+        <li class="ragistration nav-items">
+          <a href="#"><button class="mySelect2">Registration</button></a>
+        </li>
+      </ul>
+
+      <div class="search_mode">
+        <div class="search_burger">
+          <form class="d-flex" role="search" action="/search" method="get">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q">
+            <button class="btn" type="submit" aria-label="Search">Search</button>
+          </form>
+          <div class="mode">
+            <button class="mode_button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+              </svg></button>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="intro">
+    <div class="intro_section">
+      <div class="intro_video_container">
+        <div id="l1">STUDY</div>
+        <div id="l2">AT</div>
+        <div id="l3"> YOUR</div>
+        <div id="l4">CONVINIENCE</div>
+      </div>
+      <div id="para">"Discover your ideal tutor effortlessly."</div>
+
+      <div class="intro_btn">
+        <a href="#review_h">
+          <div id="view_tutor" class="btn">View Reviews</div>
+        </a>
+        <a href="#view_c">
+          <div id="view_courses" class="btn">View courses</div>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="intro_img">
+
+      <img id="people" src="images_landing_page/3d-business-guy-and-girl-students.png" alt="image">
+    </div>
+
+
+  </div>
+  <div class="features">
+
+    <div class="features_heading">
+      <h1>Features</h1>
+      <h3>What we have to offer?</h3>
+    </div>
+
+      <div class="features_tabaloid" id="feature">
+        <div class="variety_of_courses">
+          <div id="icon1"><img src="images_landing_page/books.png" alt="image"></div>
+          <div id="text1">Variety of courses</div>
+          <p id="discript">lorem</p>
+        </div>
+
+        <div class="Skilled_Teacher" id="feature">
+          <div id="icon2"><img src="images_landing_page/student.png" alt=""></div>
+          <div id="text1">Skilled Teacher</div>
+          <p id="discript">lorem</p>
+        </div>
+
+        <div class="Effortless_job_search" id="feature">
+          <div id="icon3"><img src="images_landing_page/job-search.png" alt=""></div>
+          <div id="text1">Effortless Job Search</div>
+          <p id="discript">lorem</p>
+        </div>
+
+        <div class="teacher" id="feature">
+          <div id="icon2"><img src="images_landing_page/recruitment.png" alt=""></div>
+          <div id="text1">Teacher Around Your Locality</div>
+          <p id="discript">lorem</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="courses" id="view_c">
+      <div class="c_div">
+        <div class="c_heading">
+          <h1>What courses we have to <span>offer?</span></h1>
+        </div>
+        <div class="c_container">
+          <div class="primary_learning">
+            <h3>Nursery to class 8</h3>
+          </div>
+
+          <div class="secondary_learning">
+            <h3>Class 9 to class 12</h3>
+            </h3>
+          </div>
+
+          <div class="college">
+            <h3>Graduation level</h3>
+            <h4>Specific decipline</h4>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  <div class="container">
+      <sction class="review_h" id="review_h">
+        <h4>What students says?</h4>
+        <h1>Reviews</h1>
+      </sction>
+      <!--swiper section-->
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+          <!--section_start-->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-pixabay-220453.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+          <!--section end-->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-mike-kramor-18699972.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--section end-->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-justin-shaifer-1222271.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--section end-->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-italo-melo-2379004.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!--section end-->
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-daniel-xavier-1102341.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!--section end-->
+
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat sint quas volu</p>
+            </div>
+            <div class="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images_landing_page/pexels-andrea-piacquadio-774909.jpg" alt="image">
+              </figure>
+              <div class="client-data-details">
+                <p>Aishaley</p>
+                <p>DSA</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  
+  <footer class="footer">
+        <div class="container_1">
+          <div class="row">
+            <div class="footer-col">
+              <div class="logo">
+                <h4>Company</h4>
+                <img src="#">
+                <p>"Discover your ideal tutor effortlessly."</p>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Registration </a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Refund and Cancellation Policy</a></li>
+              </ul>
+            </div>
+
+
+            <div class="footer-col">
+
+              <h4>Get In Touch</h4>
+
+              <div class="social_media">
+
+                <div class="icons"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+                <div class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="icons"><a href="#"><i class="fa-brands fa-telegram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+
+
+
+</html>
